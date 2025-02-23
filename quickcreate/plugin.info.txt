@@ -1,6 +1,0 @@
-base   quickcreate
-author Daniel Dixon
-email  daniel.dixon@mbdigital..uk
-date   2025-02-23
-name   QuickCreate Plugin
-desc   Adds a button to quickly create a new page in DokuWiki.
