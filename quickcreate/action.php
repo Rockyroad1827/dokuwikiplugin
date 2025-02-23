@@ -17,6 +17,13 @@ class action_plugin_quickcreate extends DokuWiki_Action_Plugin {
         global $INFO;
         $plugin_url = DOKU_BASE . 'lib/plugins/quickcreate/';
         $username = $INFO['userinfo']['name'] ?: 'Anonymous';
+        $userRoles = $INFO['userinfo']['grps'];  // User's roles
+        $allowedRoles = explode(',', $this->getConf('allowed_roles'));  // Configured allowed roles
+
+        // If roles are set, but the user doesn't have access, don't show the button
+        if (!empty($allowedRoles[0]) && empty(array_intersect($userRoles, $allowedRoles))) {
+            return;
+        }
 
         echo '<link rel="stylesheet" type="text/css" href="'.$plugin_url.'style.css">';
         echo '<script>var QC_USERNAME = "'.$username.'";</script>';
@@ -57,7 +64,14 @@ class action_plugin_quickcreate extends DokuWiki_Action_Plugin {
         $namespace = trim($INPUT->post->str('namespace'));
         $pagename = trim($INPUT->post->str('pagename'));
         $username = $INFO['userinfo']['name'] ?: 'Anonymous';
-        $date = date("Y-m-d H:i:s");
+        $userRoles = $INFO['userinfo']['grps'];  
+        $allowedRoles = explode(',', $this->getConf('allowed_roles'));
+
+        // If roles are set, but the user doesn't have access, deny the request
+        if (!empty($allowedRoles[0]) && empty(array_intersect($userRoles, $allowedRoles))) {
+            echo json_encode(["success" => false, "error" => "Access denied."]);
+            return;
+        }
 
         if (empty($pagename)) {
             echo json_encode(["success" => false, "error" => "Page name is required."]);
@@ -72,6 +86,7 @@ class action_plugin_quickcreate extends DokuWiki_Action_Plugin {
             return;
         }
 
+        $date = date("Y-m-d H:i:s");
         $content = "**Page created by:** $username on $date\n\n";
         saveWikiText($fullPage, $content, "Created via QuickCreate Plugin");
 
