@@ -1,5 +1,6 @@
 # dokuwikiplugin
-Plugins for Dokuwiki
+Plugins for Dokuwiki:
++ quickcreate
 
 directory:
 Dokuwii -> lib -> Plugins
