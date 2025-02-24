@@ -4,3 +4,4 @@ date   2025-02-23
 name   CreatePage Plugin
 desc   Adds a button to quickly create a new page in DokuWiki.
 version 0.03
+Repository https://github.com/Rockyroad1827/dokuwikiplugin/tree/main/quickcreate
