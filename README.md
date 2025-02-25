@@ -1,6 +1,7 @@
 # dokuwikiplugin
 Plugins for Dokuwiki:
 + quickcreate
++ +discordwebhook
 
 directory:
 Dokuwii -> lib -> Plugins
@@ -13,4 +14,6 @@ QuickCreate is a plugin used to make pages fast in dokuwiki - by adding this plu
 
 - Once a page has been created it will be empty. if you leave the page once it has been created - the page will auto delete and you will have to make it again.
 
+## === discordwebhook ===
 
+Discordwebhook is a plugin that allows the user to connect a webhook to the dokuwiki server. it will send an embed into the specified chat (changed in the discord ui). it will show if a page is edited or created, and will also show its location.
