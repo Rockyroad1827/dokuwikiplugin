@@ -17,3 +17,6 @@ QuickCreate is a plugin used to make pages fast in dokuwiki - by adding this plu
 ## === discordwebhook ===
 
 Discordwebhook is a plugin that allows the user to connect a webhook to the dokuwiki server. it will send an embed into the specified chat (changed in the discord ui). it will show if a page is edited or created, and will also show its location.
+
++To setup this plugin, go to the configuration settings in your dokuwiki page and go to plugins -> discordwebhook. Copy your discord webhook and paste it into the url box.
++If you want the plugin to not send the webhook to discord either delete the webhook url or uncheck the enable tickbox in the configuration settings.
