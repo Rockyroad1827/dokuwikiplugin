@@ -1,0 +1,6 @@
+base   discordwebhook
+author Daniel Dixon
+date   2025-02-25
+name   Discord Webhook Plugin
+desc   Sends a Discord notification when a page is created via the Quick Create Plugin.
+version 1.0
