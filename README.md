@@ -20,3 +20,6 @@ Discordwebhook is a plugin that allows the user to connect a webhook to the doku
 
 + To setup this plugin, go to the configuration settings in your dokuwiki page and go to plugins -> discordwebhook. Copy your discord webhook and paste it into the url box.
 + If you want the plugin to not send the webhook to discord either delete the webhook url or uncheck the enable tickbox in the configuration settings.
+
+  ![image](https://github.com/user-attachments/assets/3bb470b3-61c7-452f-b428-4ee466773f70)
+
