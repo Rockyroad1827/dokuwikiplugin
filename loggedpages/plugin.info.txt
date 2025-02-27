@@ -1,0 +1,7 @@
+base   loggedpages
+author Daniel Dixon
+date   2025-02-27
+name   PageLogger Plugin
+desc   Logs pages into the config menu so anly admins can view and change logs. They also are revertable.
+version 0.01
+Repository https://github.com/Rockyroad1827/dokuwikiplugin/tree/main/loggedpages
