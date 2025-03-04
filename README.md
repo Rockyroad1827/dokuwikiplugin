@@ -1,7 +1,8 @@
 # dokuwikiplugin
 Plugins for Dokuwiki:
 + quickcreate
-+ +discordwebhook
++ discordwebhook
++ loggedpages
 
 directory:
 Dokuwii -> lib -> Plugins
