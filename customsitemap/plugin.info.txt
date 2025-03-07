@@ -1,0 +1,6 @@
+base    customsitemap
+author  Daniel DIxon
+date    2025-03-07
+name    Custom Sitemap
+desc    Replaces the default DokuWiki sitemap with an interactive box-based version.
+url     https://mbdigital.co.uk

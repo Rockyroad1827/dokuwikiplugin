@@ -1,0 +1,47 @@
+#custom-sitemap {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#sitemap-search {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#namespaces-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.namespace-box {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    min-width: 150px;
+}
+
+.namespace-box:hover {
+    background: #e0e0e0;
+}
+
+.page-list {
+    display: none;
+    margin-top: 5px;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+}
+
+.page-list.visible {
+    display: block;
+}
+
+.page-item {
+    padding: 3px;
+    border-bottom: 1px solid #ddd;
+}
