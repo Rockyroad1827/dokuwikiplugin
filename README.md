@@ -25,3 +25,7 @@ Discordwebhook is a plugin that allows the user to connect a webhook to the doku
 ## === loggedpages ===
 
 Work in process- Logging system for dokuwiki which uses the admin menu to store logged files.
+
+## === Custom Sitemap ===
+
+Work in process - Used for a nicer Sitemap GUI
